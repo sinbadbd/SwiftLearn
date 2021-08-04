@@ -107,12 +107,7 @@ protocol Container {
 }
 
 
-// MARK:: Without Generics
-struct IntStack: Container {
-   
-    var items =  [Int]()
-    
-    mutating func push(_ item: Int){
+// MARK:: Without Generics0mutating func push(_ item: Int){
         items.append(item)
     }
     mutating func pop()-> Int {
